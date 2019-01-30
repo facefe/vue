@@ -1,0 +1,6 @@
+   #####   异步任务： 
+                               微任务 macro-task   ： promise.then process.enxtTick
+ 	               宏任务 micro-task    :  setTimeout  setInterval  整体script代码 
+
+
+https://juejin.im/post/59e85eebf265da430d571f89 文章链接 写的挺好。
