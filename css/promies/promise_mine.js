@@ -92,4 +92,6 @@ Promise_mine.prototype.then = function (func_resolve, func_reject) {
 
     return newPro
 
+    // 有点复杂...
+
 }
