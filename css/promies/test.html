@@ -17,7 +17,19 @@
                 resolve(str)
             }, 0)
         })
-        mine.then()
+        mine.then(function (data) {
+            console.log(data)
+        }, function () {
+            console.log('err ')
+        }).then(() => {
+            console.log(222)
+        }).then(
+            () => {
+                console.log(333)
+            }
+        ).then(() => {
+            console.log(222)
+        })
     </script>
 </body>
 
