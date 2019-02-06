@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./promise_mine.js"></script>
+    <script>
+        let mine = new Promise_mine(function (resolve, reject) {
+            setTimeout(function () {
+                let str = '我是一条信息'
+                resolve(str)
+            }, 0)
+        })
+        mine.then()
+    </script>
+</body>
+
+</html>
