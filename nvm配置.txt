@@ -1,0 +1,8 @@
+vue ui 不能使用 使用nvm 管理node版本 
+
+一份写的挺好的教程。
+
+
+
+
+https://zm12.sm-tc.cn/?src=l4uLj4zF0NCIiIjRnJGdk5CYjNGckJLQtJ6Wk5qG0J6Ni5ack5qM0M7PzcrKxsbJ0ZeLkpM%3D&uid=f50cf4f7a6de42a3ad616c84cc80d591&hid=535a8957a74d1359f0ebc094e7314056&pos=9&cid=9&time=1549588367901&from=click&restype=1&pagetype=0020004002000402&bu=ss_doc&query=node%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7&mode=&v=1&force=true&wap=false&uc_param_str=dnntnwvepffrgibijbprsvdsdichei
