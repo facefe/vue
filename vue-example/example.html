@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue 的双向语法绑定以及v-model</title>
+</head>
+
+<body>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <div class="app">
+        <div>
+            <input v-bind:value="val" @input="val = $event.target.value" type="text">
+            <div v-text="val"></div>
+            <comm-vmodel :valstr="val" @input="val = $event"></comm-vmodel>
+            <div v-text="val"></div>
+            <div>好的， 没有什么问题</div>
+        </div>
+    </div>
+    <!-- v-model 在组件中的应用  -->
+    <script>
+        let commVmodel = {
+            template: `<input v-bind:value = "valstr" @input = "$emit('input', $event.target.value)"  type="text" >`,
+            props: {
+                valstr: {
+                    type: String,
+                }
+            }
+        }
+
+
+        let vm = new Vue({
+            data: {
+                val: '三个之间的双向数据绑定',
+                str: '组件之间的双向数据绑定'
+            },
+            components: {
+                commVmodel
+            },
+            methods: {
+
+            },
+        }).$mount('.app')
+    </script>
+</body>
+
+</html>
